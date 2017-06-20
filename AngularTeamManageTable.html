@@ -18,7 +18,7 @@
                                     </thead>
                                     <tbody>
                                         <tr ng-repeat="staff in exVm.item.staff" ng-click="exVm.selectMember(staff)" ng-hide="exVm.hideInactive && (staff.projectPersonStatus == 'Denied' || staff.projectPersonStatus == 'Inactive')">
-                                            <td style="text-align:center;"><img class="photo-thumb-sm" ng-src="https://sabio-training.s3-us-west-2.amazonaws.com/C31/{{staff.person.photoKey}}" /></td>
+                                            <td style="text-align:center;"><img class="photo-thumb-sm" ng-src="https://chris.s3-us-west-2.amazonaws.com/project/{{staff.person.photoKey}}" /></td>
                                             <td><a>{{staff.person.fullName}}</a></td>
                                             <td>{{staff.isLeader ? 'Project Lead' : 'Team Member'}}</td>
                                             <td>{{staff.person.email}}</td>
